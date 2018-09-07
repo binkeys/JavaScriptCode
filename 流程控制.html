@@ -10,6 +10,15 @@
         }else{
             console.log("假");
         }
+
+        var inp = parseInt(prompt("输入年份:"));
+        if (inp % 4 == 0 && inp % 100 != 0 || inp % 400 == 0){
+            console.log("闰年");
+        }else {
+            console.log("平年");
+        }
+
+
     </script>
 </head>
 <body>

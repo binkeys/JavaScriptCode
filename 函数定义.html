@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 函数定义
+        function func(a, b){
+            // 显式声明形参
+            // console.log(a+b);
+            return a + b;
+        }
+        function func1(){
+            // 隐式声明形参
+            for (var i = 0; i < arguments.length; i++){
+                console.log(arguments[i]);
+            }
+        }
+        var f2 = function (){
+            // 匿名函数定义
+            console.log("匿名函数");
+            return 123;
+        }
+
+
+        // 函数调用
+        var f = func(1, 2);
+        console.log(f);
+        func1(1,2,3,4,5,6,7,8);
+        console.log(f2());
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

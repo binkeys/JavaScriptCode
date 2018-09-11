@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function getDate(dt) {
+            var year = dt.getFullYear();
+            var monht = dt.getMonth()+1;
+            var day = dt.getDate();
+            var hour = dt.getHours();
+            var minute = dt.getMinutes();
+            var scond = dt.getSeconds();
+
+            monht = monht<10?"0"+monht: monht;
+            day = day<10?"0"+day: day;
+            hour = hour<10?"0"+hour: hour;
+            minute = minute<10?"0"+minute: minute;
+            scond = scond<10?"0"+scond: scond;
+
+            return year + "-" + monht + "-" + day + " " + hour + ":" + minute + ":" + scond;
+        }
+        console.log(getDate(new Date()));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

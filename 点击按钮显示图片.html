@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="显示图片" id="btn">
+
+    <img src="" alt="" id="img" >
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.onclick = f1;
+
+        function f1() {
+            const img = document.getElementById("img");
+            img.src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536572342474&di" +
+                "=d0f0cf33be1271b56290eee50241f6b1&imgtype=0&src=http%3A%2F%2Fstatic.meiguoshenpo.com%2Fimage%2F" +
+                "201505%2F056356641855301562508016757.png";
+            img.width = "400";
+            img.height = "300";
+        }
+
+
+    </script>
+</body>
+</html>

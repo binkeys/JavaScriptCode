@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="显示效果" onclick="f1()"/>
+    <input type="button" value="分离代码" id="btn" />
+    <input type="button" value="最终版" id="btn1" />
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.onclick = f2;
+        function f1() {
+            alert("hello world");
+        }
+        function f2() {
+            alert("分离代码");
+        }
+
+        document.getElementById("btn1").onclick = function () {
+            alert("最终版");
+        };
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var json = {
+        "name":"小米",
+        "age":"10",
+        "sex":"女"
+    };
+
+    for (var key in json){
+        console.log(key + ":" + json[key]);
+    }
+
+    // function Ff(name, age) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.s = function () {
+    //         console.log(this.name + this.age);
+    //     }
+    // }
+    // var s1 = new Ff('1', 2);
+    //
+    // function deep(obj) {
+    //     var newobj = obj.constructor === Array ? []:{};
+    //     if (typeof obj !== 'object'){
+    //         return;
+    //     }else {
+    //         for (var i in obj) {
+    //             if (obj.hasOwnProperty(i)){
+    //                 newobj[i] = typeof obj[i] === 'object'?deep(obj[i]):obj[i];
+    //             }
+    //         }
+    //     }
+    //     return newobj;
+    // }
+    //
+    // var s2 = deep(s1);
+    // s1.s();
+    // s2.s();
+    // s1.name = "s1";
+    // s1.s();
+    // s2.s();
+
+
+
+</script>
+</body>
+</html>

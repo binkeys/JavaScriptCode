@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            padding-top: 10px;
+        }
+        .cls {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+<p>ppppppppp</p>
+<p class="cls">sssssssss</p>
+<span class="cls">spspsspsppsps</span><br>
+<span>ssspppspppspp</span><br>
+<div class="cls">divdivdiv</div>
+<div>dddiviviv</div>
+<input type="button" value="设置" id="btn"><br>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        var cls = document.getElementsByClassName("cls");
+        for (var i = 0; i < cls.length; i++){
+            cls[i].style.backgroundColor = "#300caa";
+        }
+    };
+</script>
+</body>
+</html>

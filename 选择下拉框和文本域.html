@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="点菜" id="btn">
+
+<select name="" id="ss">
+    <option value="1">豆腐</option>
+    <option value="2">花生米</option>
+    <option value="3" selected="selected">排骨</option>
+    <option value="4">小鸡</option>
+    <option value="5">大鹅</option>
+</select>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        var ss = document.getElementById("ss");
+        ss.selectedIndex = 3;
+        // console.log(ss.selectedIndex);
+    }
+</script>
+
+<input type="button" value="禁用" id="btn2">
+<textarea name="" id="tt" cols="30" rows="10">
+    hello， i`m is nibaba
+    hahaha
+    hadsfa
+    hdsfsadh
+</textarea>
+
+<script>
+    document.getElementById("btn2").onclick = function () {
+
+        var tt = document.getElementById("tt");
+        tt.value = "safdfsadfsdafsdafsad";
+        tt.disabled = true;
+
+    }
+</script>
+
+</body>
+</html>

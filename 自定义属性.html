@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            width: 100px;
+            list-style-type: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul id="uu">
+        <li score="10">乔峰</li>
+        <li score="20">慕容</li>
+        <li score="30">虚竹</li>
+        <li score="40">阿紫</li>
+        <li score="50">段誉</li>
+    </ul>
+
+    <!--设置自定义属性-->
+    <script>
+        var list = document.getElementById("uu").getElementsByTagName("li");
+        for (var i = 0; i < list.length; i++){
+            list[i].setAttribute("ppp", (i + 1) * 10);
+            // 移除自定义属性
+            list[i].removeAttribute("score");
+        }
+    </script>
+
+    <!--获取自定义属性-->
+    <!--<script>-->
+        <!--var list = document.getElementsByTagName("li");-->
+        <!--for (var i = 0; i < list.length; i++){-->
+            <!--list[i].onclick = function () {-->
+                <!--alert(this.getAttribute("score"));-->
+            <!--}-->
+        <!--}-->
+    <!--</script>-->
+</body>
+</html>

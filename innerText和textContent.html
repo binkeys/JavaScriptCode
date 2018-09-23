@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="设置" id="btn">
+<div id="dv">hello</div>
+<script>
+    // 兼容代码
+    ///////////////////////////////////////////////
+    function setText(element, text) {
+        if (typeof element.textContent === "undefined"){
+            element.innerText = text;
+        } else {
+            element.textContent = text;
+        }
+    }
+
+    function getText(element) {
+        if (typeof element.textContent === "undefined"){
+            return element.innerText;
+        } else {
+            return element.textContent;
+        }
+    }
+    ///////////////////////////////////////////////////////////
+    document.getElementById("btn").onclick = function () {
+        // console.log(getText(document.getElementById("dv")));
+        setText(document.getElementById("dv"), "哈哈");
+    }
+
+    // document.getElementById("btn").onclick = function () {
+    //     document.getElementById("dv").textContent = "textContent";
+    //     document.getElementById("dv").innerText += "\ninnerText";
+    //
+    //     console.log(document.getElementById("dv").innerText);
+    // }
+</script>
+</body>
+</html>

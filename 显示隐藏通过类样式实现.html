@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cls {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="设置样式" id="btn">
+<div id="dv"></div>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        document.getElementById("dv").className = "cls";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="选择性别" id="btn1">
+<input type="radio" value="1" name="sex" >男
+<input type="radio" value="2" name="sex" >女
+<input type="radio" value="3" name="sex" >妖
+
+<script>
+    document.getElementById("btn1").onclick = function () {
+        var rad = document.getElementsByTagName("input");
+        for (var i = 0; i < rad.length; i++){
+            if (rad[i].type === 'radio' && rad[i].value === "2"){
+                rad[i].checked = !rad[i].checked;
+                break;
+            }
+        }
+    }
+</script>
+
+<input type="button" value="选择兴趣" id="btn2">
+<input type="checkbox" value="1" name="xq">吃饭
+<input type="checkbox" value="2" name="xq">睡觉
+<input type="checkbox" value="3" name="xq">玩手机
+<input type="checkbox" value="4" name="xq">看书
+<input type="checkbox" value="5" name="xq">玩游戏
+
+<script>
+    document.getElementById("btn2").onclick = function () {
+        var rad = document.getElementsByTagName("input");
+        for (var i = 0; i < rad.length; i++){
+            if (rad[i].type === 'checkbox' && rad[i].value === "2" || rad[i].value === "4"){
+                rad[i].checked = !rad[i].checked;
+                continue;
+            }
+        }
+    }
+</script>
+</body>
+</html>

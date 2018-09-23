@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="变色" id="btn">
+
+<ul id="uu">
+    <li>张三</li>
+    <li>张三</li>
+    <li>张三</li>
+    <li>张三</li>
+    <li>张三</li>
+    <li>张三</li>
+    <li>张三</li>
+    <li>张三</li>
+</ul>
+
+<script>
+    ulobj = document.getElementById("uu").getElementsByTagName("li");
+    document.getElementById("btn").onclick = function () {
+        for (var i = 0; i < ulobj.length; i++){
+            if (i % 2 === 0){
+                ulobj[i].style.backgroundColor = "#ffff0c";
+            }else {
+                ulobj[i].style.backgroundColor = "#aa0009";
+            }
+        }
+    }
+</script>
+</body>
+</html>

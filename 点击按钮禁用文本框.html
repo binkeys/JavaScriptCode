@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="禁用" id="btn">
+<input type="text" value="文本框" id="tex">
+
+<ul id="uu">
+    <li>卡卡西</li>
+    <li>大蛇丸</li>
+    <li>名人</li>
+    <li>佐助</li>
+    <li>爱罗</li>
+</ul>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        document.getElementById("tex").disabled = true;
+        document.getElementById("tex").style.color = "red";
+        document.getElementById("uu").style.backgroundColor = "red";
+    }
+</script>
+</body>
+</html>

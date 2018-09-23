@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn">
+<img src="img/xiaoniao.gif" alt="小鸟" title="小鸟">
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        var img = document.getElementsByTagName("img");
+        img[0].alt = "大鸟";
+        img[0].title = "大鸟";
+    }
+
+</script>
+</body>
+</html>

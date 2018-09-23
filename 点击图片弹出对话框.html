@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="im">
+        <img src="img/1-small.jpg" alt="" name="1">
+        <img src="img/1-small.jpg" alt="" name="2">
+        <img src="img/1-small.jpg" alt="" name="3">
+        <img src="img/1-small.jpg" alt="" name="4">
+        <img src="img/1-small.jpg" alt="" name="5">
+    </div>
+
+    <script>
+        var imgobj = document.getElementsByTagName("img");
+
+        for (var i = 0; i < imgobj.length; i++){
+            const j = i;
+            imgobj[i].onclick = function () {
+                alert("点击");
+                console.log(imgobj[j].name);
+            }
+        }
+
+    </script>
+</body>
+</html>

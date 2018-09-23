@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 200px;
+            height: 150px;
+            /*background-color: chartreuse;*/
+            float: left;
+            margin-left: 10px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<script>
+    var dv = document.getElementsByTagName("div");
+    for (var i = 0; i < dv.length; i++){
+        dv[i].onmouseover = function () {
+            this.style.border = "2px solid red";
+        };
+        dv[i].onmouseout = function () {
+            this.style.border = "";
+        };
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="修改文本框" id="btn"><br>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+<input type="text" value=""><br>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        var text = document.getElementsByTagName("input");
+        for (var i = 0; i < text.length; i++) {
+            if (text[i].type !== "button")
+                text[i].value = "哈哈";
+        }
+    }
+</script>
+
+</body>
+</html>

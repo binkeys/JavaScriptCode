@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="dv">
+    <span>第一个span标签</span>
+    <p>第二个p标签</p>
+    <ul id="uu">
+        <li>乔峰</li>
+        <li>慕容</li>
+        <li>段誉</li>
+        <li>虚竹</li>
+    </ul>
+</div>
+
+<script>
+    // var ulobj = document.getElementById("uu");
+    // console.log(ulobj.parentNode);
+    // console.log(ulobj.parentElement);
+    // console.log(ulobj.parentNode.nodeType);
+    // console.log(ulobj.parentNode.nodeName);
+    // console.log(ulobj.parentNode.nodeValue);
+
+    // var dvobj = document.getElementById("dv");
+    // console.log(dvobj.childNodes);
+    // console.log(dvobj.children);
+
+    var dvobj = document.getElementById("dv");
+    for (var i = 0; i < dvobj.children.length; i++){
+        var node = dvobj.children[i];
+        console.log(node.nodeType + node.nodeName + node.nodeValue);
+    }
+</script>
+</body>
+</html>

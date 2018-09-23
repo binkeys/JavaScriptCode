@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="https://www.baidu.com" id="aa">百度</a>
+<a href="https://www.jd.com" onclick="f1('123'); return false;">京东</a>
+
+<script>
+    document.getElementById("aa").onclick = function () {
+        alert("哈哈");
+        return false;
+    }
+    function f1(key){
+        alert(key);
+
+        // return false;
+    }
+</script>
+</body>
+</html>

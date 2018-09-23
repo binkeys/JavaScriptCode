@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>李四</li>
+    <li>李四</li>
+    <li>李四</li>
+    <li>李四</li>
+    <li>李四</li>
+    <li>李四</li>
+    <li>李四</li>
+    <li>李四</li>
+</ul>
+
+<script>
+    var list = document.getElementsByTagName("li");
+
+    for (var i = 0; i < list.length; i++){
+        list[i].onmousemove = function () {
+            this.style.backgroundColor = "red";
+        };
+
+        list[i].onmouseout = function () {
+            this.style.backgroundColor = "#ffffff";
+        };
+    }
+
+</script>
+</body>
+</html>

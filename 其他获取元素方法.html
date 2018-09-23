@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cls {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="设置" id="btn">
+<p>ppppp</p>
+<p class="cls">ppppp</p>
+<span>spanspan</span>
+<span class="cls">spanspan</span>
+<script>
+    // var btn = document.querySelector("#btn");
+    // btn.onclick = function () {
+    //     alert("hello");
+    // }
+
+    var cls = document.querySelectorAll(".cls");
+    for (var i = 0; i < cls.length; i++){
+        cls[i].style.backgroundColor = "red";
+    };
+</script>
+</body>
+</html>

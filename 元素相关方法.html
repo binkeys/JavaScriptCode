@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="显示" id="btn">
+<input type="button" value="删除" id="btn1">
+<input type="button" value="全删" id="btn2">
+<div id="dv"></div>
+
+<script>
+    function get(str) {
+        return document.getElementById(str);
+    }
+    var i =0;
+    get("btn").onclick = function () {
+        i++;
+        var obj = document.createElement("input");
+        obj.type = "button";
+        obj.value = "按钮"+i;
+        get("dv").appendChild(obj);  //追加
+        // get("dv").insertBefore(obj, get("dv").firstElementChild);  //插入
+        // get("dv").replaceChild();   //替换
+    };
+    get("btn1").onclick = function () {
+        get("dv").removeChild(get("dv").firstElementChild);
+    };
+    get("btn2").onclick = function () {
+        while(get("dv").firstElementChild)
+            get("dv").removeChild(get("dv").firstElementChild);
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

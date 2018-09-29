@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="隔行变色" id="btn">
+<ul id="uu">
+    <li>卡西欧</li>
+    <li>天王</li>
+    <li>浪琴</li>
+    <li>上海</li>
+    <li>宾格</li>
+    <li>花花公子</li>
+    <li>圣罗兰</li>
+    <li>香奈儿</li>
+</ul>
+
+<script>
+    const btn = document.getElementById("btn");
+    const uu = document.getElementById("uu");
+
+    btn.onclick = function () {
+        const children = uu.children;
+        for (let i = 0; i < children.length; i++){
+            if (children[i].nodeType === 1 && children[i].nodeName === "LI"){
+                children[i].style.backgroundColor = i % 2 === 0? "red":"yellow";
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

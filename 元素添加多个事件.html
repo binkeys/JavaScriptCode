@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="show" id="btn">
+
+<script>
+    // 方法一
+    // document.getElementById("btn").addEventListener("click", function () {
+    //     console.log("匿名函数1");
+    // }, false);
+    // document.getElementById("btn").addEventListener("click", function () {
+    //     console.log("匿名函数2");
+    // }, false);
+    // document.getElementById("btn").addEventListener("click", function () {
+    //     console.log("匿名函数3");
+    // }, false);
+    // document.getElementById("btn").addEventListener("click", function () {
+    //     console.log("匿名函数4");
+    // }, false);
+
+    // 方法二,ie8特例s
+    document.getElementById("btn").attachEvent("onclick", function () {
+        console.log("1111111");
+    });
+
+
+</script>
+
+</body>
+</html>

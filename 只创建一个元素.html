@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="创建" id="btn">
+<div id="dv"></div>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        // if (document.getElementById("btn1")){
+        //     document.getElementById("dv").removeChild(document.getElementById("btn1"));
+        // }
+        // var obj = document.createElement("input");
+        // obj.type = "button";
+        // obj.value = "按钮";
+        // obj.id = "btn1";
+        // document.getElementById("dv").appendChild(obj);
+
+        if (!document.getElementById("btn1")){
+            var obj = document.createElement("input");
+            obj.type = "button";
+            obj.value = "按钮";
+            obj.id = "btn1";
+            document.getElementById("dv").appendChild(obj);
+        }
+    }
+</script>
+</body>
+</html>

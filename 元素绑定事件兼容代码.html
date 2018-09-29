@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+
+<script>
+    function show1() {
+        console.log("show1");
+    }
+    function show2() {
+        console.log("show2");
+    }
+    function show3() {
+        console.log("show3");
+    }
+    
+    function addEventListener(element, type, func) {
+        if (element.addEventListener) {
+            return element.addEventListener(type, func, false);
+        } else if (element.attachEvent) {
+            return element.attchEvent("on" + type, func);
+        }
+    }
+
+    addEventListener(document.getElementById("btn"), "click", show1);
+    addEventListener(document.getElementById("btn"), "click", show2);
+    addEventListener(document.getElementById("btn"), "click", show3);
+
+    
+</script>
+</body>
+</html>

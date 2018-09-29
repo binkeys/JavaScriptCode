@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<input type="button" value="解除绑定" id="btn1">
+
+<script src="common.js"></script>
+
+<script>
+    // 第一种
+    // getid("btn").onclick = function () {
+    //     console.log("事件");
+    // };
+    // getid("btn1").onclick = function () {
+    //     getid("btn").onclick = null;
+    // };
+
+    // 第二种
+
+    function show1() {
+        console.log("第一个");
+    }
+
+    function show2() {
+        console.log("第二个");
+    }
+
+    getid("btn").addEventListener("click", show1, false);
+
+    getid("btn").addEventListener("click", show2, false);
+
+    getid("btn1").onclick = function () {
+        getid("btn").removeEventListener("click", show1, false);
+    };
+
+</script>
+</body>
+</html>
